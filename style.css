@@ -373,9 +373,10 @@ body.rtl .lang-switcher {
      }
 
      .menu-item-img {
-         width: 100%;
-         max-width: 200px;
-         height: auto;
+         width: 80px;
+         height: 80px;
+         object-fit: cover;
+         padding: 3px;
      }
 
      form {
@@ -392,4 +393,5 @@ body.rtl .lang-switcher {
          text-align: center;
          margin: 10px 0;
      }
+
  }
