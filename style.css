@@ -370,7 +370,7 @@ body.rtl .lang-switcher {
      }
 
      .menu-item {
-         flex-direction: row-reverse;
+         flex-direction: reverse;
          gap: 12px;
          padding: 20px;
      }
@@ -397,3 +397,4 @@ body.rtl .lang-switcher {
          margin: 10px 0;
      }
  }
+
