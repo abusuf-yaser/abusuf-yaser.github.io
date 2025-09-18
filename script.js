@@ -1,9 +1,9 @@
 
 window.addEventListener('load', () => {
-  //const page = window.location.pathname.split("/").pop();
-  //if (page === "index.html") {
-   // alert("Welcome to Golden Spoon! 🍕 Enjoy your visit!");
-  //}
+  // const page = window.location.pathname.split("/").pop();
+  // if (page === "index.html") {
+  //   alert("Welcome to Golden Spoon! 🍕 Enjoy your visit!");
+  // }
 
 
   const dateInput = document.getElementById('date');
@@ -64,10 +64,7 @@ if (form && confirmation) {
     form.reset();
   });
 }
-function setLanguage(lang) {
-  localStorage.setItem("lang", lang); 
-  translatePage(lang);
-}
+
 
 function translatePage(lang) {
   const elements = document.querySelectorAll("[data-translate]");
@@ -78,27 +75,23 @@ function translatePage(lang) {
 }
 
 
-window.addEventListener("load", () => {
-  const savedLang = localStorage.getItem("lang") || "en";
-  translatePage(savedLang);
-});
 function setLanguage(lang) {
-    localStorage.setItem("lang", lang); 
-    translatePage(lang);
+  localStorage.setItem("lang", lang);
+  translatePage(lang);
 
-    const body = document.body;
-    if(lang === "ar") {
-        body.classList.add("rtl");
-    } else {
-        body.classList.remove("rtl");
-    }
+  const body = document.body;
+  if (lang === "ar") {
+    body.classList.add("rtl");
+  } else {
+    body.classList.remove("rtl");
+  }
 }
 
 window.addEventListener("load", () => {
-    const savedLang = localStorage.getItem("lang") || "en";
-    translatePage(savedLang);
+  const savedLang = localStorage.getItem("lang") || "en";
+  translatePage(savedLang);
 
-    if(savedLang === "ar") {
-        document.body.classList.add("rtl");
-    }
+  if (savedLang === "ar") {
+    document.body.classList.add("rtl");
+  }
 });
