@@ -13,6 +13,11 @@ const translations = {
     restaurant_name: "Golden Spoon",
     restaurant_description: "Your favorite place for delicious meals",
     our_menu: "Our Menu",
+    main_courses: "Main Courses",
+    margherita_pizza: "Margherita Pizza",
+    beef_burger: "Beef Burger",
+    vegetable_stir_fry: "Vegetable Stir Fry",
+    fast_food: "Fast Food",
     grilled_chicken: "Grilled Chicken",
     caesar_salad: "Caesar Salad",
     spaghetti_bolognese: "Spaghetti Bolognese",
@@ -45,6 +50,11 @@ const translations = {
     restaurant_name: "غولدن سبون",
     restaurant_description: "مكانك المفضل لأشهى الأطباق",
     our_menu: "قائمتنا",
+    fast_food: "الوجبات السريعة",
+    main_courses: "الأطباق الرئيسية",
+    margherita_pizza: "بيتزا مارجريتا",
+    beef_burger: "برغر لحم بقري",
+    vegetable_stir_fry: "خضار سوتيه",
     grilled_chicken: "دجاج مشوي",
     caesar_salad: "سلطة سيزر",
     spaghetti_bolognese: "سباغيتي بولونيز",
@@ -77,6 +87,11 @@ const translations = {
     restaurant_name: "Golden Spoon",
     restaurant_description: "Lezzetli yemekler için en sevdiğiniz yer",
     our_menu: "Menümüz",
+    main_courses: "Ana Yemekler",
+    margherita_pizza: "Margarita Pizza",
+    beef_burger: "Dana Burger",
+    vegetable_stir_fry: "Sebze Sote",
+    fast_food: "Hızlı Yemekler",
     grilled_chicken: "Izgara Tavuk",
     caesar_salad: "Sezar Salata",
     spaghetti_bolognese: "Spagetti Bolonez",
@@ -96,5 +111,6 @@ const translations = {
     submit: "Rezervasyon Yap"
   }
 };
+
 const userLang = navigator.language || navigator.userLanguage;
 const lang = userLang.startsWith('ar') ? 'ar' : userLang.startsWith('tr') ? 'tr' : 'en';
