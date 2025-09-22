@@ -380,22 +380,32 @@ body.rtl .lang-switcher {
         margin: 10px auto;
         display: block;
     }
+    .menu-section, .menu-section1{
+        width: 100%;
+        float: none;
+        margin: 0 0 15px 0;
+        display: block;
+    }
+    
 
     .menu-item {
-        flex-direction: reverse;
-        gap: 8px;
-        padding: 0;
-    }
-
-    .menu-item p {
-        margin-left: 1px;
+        flex-direction: row;     
+        width: 100%;              
+        gap: 10px;
+        padding: 15px;
     }
 
     .menu-item-img {
-        width: 100%;
-        max-width: 100px;
-        height: 100px;
-        object-fit: cover;
+        width: 80px;
+        height: 80px;
+    }
+
+    .menu-item h3 {
+        font-size: 18px;
+    }
+
+    .menu-item p {
+        font-size: 16px;
     }
 
     form {
